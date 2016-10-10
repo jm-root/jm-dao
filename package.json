@@ -1,0 +1,37 @@
+{
+  "name": "jm-dao",
+  "version": "0.0.1",
+  "description": "dao lib for jm-* projects",
+  "main": "./lib/index",
+  "scripts": {
+    "test": "node ./test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jm-root/jm-dao.git"
+  },
+  "keywords": [
+    "javascript",
+    "jm-dao"
+  ],
+  "author": {
+    "name": "Jeff YU"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jm-root/jm-dao/issues"
+  },
+  "homepage": "https://github.com/jm-root/jm-dao",
+  "dependencies": {
+    "mongoose": "*",
+    "express": "*",
+    "lodash": "*",
+    "jm-core": "*"
+  },
+  "devDependencies": {
+  },
+  "readme": "jm-dao\r\n=========\r\n\r\ndao lib for jm-* projects\r\n",
+  "readmeFilename": "README.md",
+  "_id": "jm-dao@0.0.1",
+  "_from": "jm-dao@*"
+}
