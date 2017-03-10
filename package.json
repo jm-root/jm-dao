@@ -1,6 +1,6 @@
 {
   "name": "jm-dao",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "dao lib for jm-* projects",
   "main": "./lib/index",
   "scripts": {
