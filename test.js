@@ -34,7 +34,9 @@ var schema = new Schema(schemaDefine);
     var dao = lib.dao(
         {
             modelName: 'product',
-            schema: schema
+            schema: schema,
+            tableName: 'p',
+            prefix: 'test_'
         }
     );
     dao.create(
