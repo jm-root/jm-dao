@@ -13,14 +13,6 @@ var schemaDefine = {
 
 var schema = new Schema(schemaDefine);
 
-schema.path('crtime')
-    .default(function(){
-        return new Date()
-    })
-    .set(function(v){
-        return v == 'now' ? new Date() : v;
-    });
-
 (function testDB(){
     //db1
     var dbUri = 'mongodb://localhost/test';
