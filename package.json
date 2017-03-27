@@ -1,10 +1,10 @@
 {
   "name": "jm-dao",
-  "version": "0.0.1",
+  "version": "0.0.6",
   "description": "dao lib for jm-* projects",
   "main": "./lib/index",
   "scripts": {
-    "test": "node ./test.js"
+    "test": "node test"
   },
   "repository": {
     "type": "git",
@@ -23,15 +23,10 @@
   },
   "homepage": "https://github.com/jm-root/jm-dao",
   "dependencies": {
-    "mongoose": "*",
-    "express": "*",
-    "lodash": "*",
-    "jm-core": "*"
-  },
-  "devDependencies": {
-  },
-  "readme": "jm-dao\r\n=========\r\n\r\ndao lib for jm-* projects\r\n",
-  "readmeFilename": "README.md",
-  "_id": "jm-dao@0.0.1",
-  "_from": "jm-dao@*"
+    "bluebird": "^3.5.0",
+    "express": "^4.15.2",
+    "jm-core": "^0.0.7",
+    "lodash": "^4.17.4",
+    "mongoose": "^4.7.9"
+  }
 }
