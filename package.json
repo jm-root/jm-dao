@@ -1,7 +1,7 @@
 {
   "name": "jm-dao",
-  "version": "0.0.6",
-  "description": "dao lib for jm-* projects",
+  "version": "1.0.0",
+  "description": "dao lib",
   "main": "./lib/index",
   "scripts": {
     "test": "node test"
@@ -24,8 +24,6 @@
   "homepage": "https://github.com/jm-root/jm-dao",
   "dependencies": {
     "bluebird": "^3.5.0",
-    "express": "^4.15.2",
-    "jm-core": "^0.0.7",
     "lodash": "^4.17.4",
     "mongoose": "^4.7.9"
   }

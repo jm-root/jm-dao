@@ -1,5 +1,2 @@
-jm-dao
-=========
-
-dao lib for jm-* projects
-
+#jm-dao
+dao lib

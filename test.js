@@ -1,5 +1,5 @@
 var lib = require('./');
-var DB = lib.DB;
+var db = lib.db;
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
@@ -16,14 +16,14 @@ var schema = new Schema(schemaDefine);
 (function testDB(){
     //db1
     var dbUri = 'mongodb://localhost/test';
-    var c = DB.connect(dbUri, true);
-    var c1= DB.connect(dbUri, true);
-    var c2= DB.connect(dbUri, true);
-    DB.disConnect(dbUri);
-    DB.disConnect(dbUri);
+    var c = db.connect(dbUri, true);
+    var c1= db.connect(dbUri, true);
+    var c2= db.connect(dbUri, true);
+    db.disConnect(dbUri);
+    db.disConnect(dbUri);
 
     //db2 default DB
-    DB.connect();
+    db.connect();
 
     sd = lib.sequence();
     for(var i=0;i<5;i++)
