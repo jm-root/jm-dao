@@ -1,10 +1,10 @@
 {
   "name": "jm-dao",
-  "version": "0.0.6",
-  "description": "dao lib for jm-* projects",
+  "version": "1.0.2",
+  "description": "dao lib",
   "main": "./lib/index",
   "scripts": {
-    "test": "node test"
+    "test": "node ./node_modules/mocha/bin/_mocha test"
   },
   "repository": {
     "type": "git",
@@ -24,9 +24,12 @@
   "homepage": "https://github.com/jm-root/jm-dao",
   "dependencies": {
     "bluebird": "^3.5.0",
-    "express": "^4.15.2",
-    "jm-core": "^0.0.7",
     "lodash": "^4.17.4",
-    "mongoose": "^4.7.9"
+    "mongoose": "^4.11.0"
+  },
+  "devDependencies": {
+    "benchmark": "^2.1.4",
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2"
   }
 }
