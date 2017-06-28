@@ -1,5 +1,8 @@
 # History
 
+## 1.0.5 / 2017-06-28
+- disableAutoIndex
+
 ## 1.0.1 / 2017-06-28
 - promise
 - db
