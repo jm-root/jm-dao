@@ -61,6 +61,19 @@ describe('db', function () {
         });
     });
 
+    it('sequence no opts', function (done) {
+        db.connect().then(function () {
+            var sd = jm.sequence();
+            sd.next('uid2').then(function (v) {
+                console.log(v);
+                expect(v > 1).to.be.ok;
+                done();
+            });
+        });
+    });
+
+
+
     it('dao createConnection', function (done) {
         db.createConnection().then(function (db) {
             var dao = jm.dao({
