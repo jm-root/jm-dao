@@ -26,6 +26,11 @@ describe('db', function () {
                 expect(doc).to.be.ok;
                 done();
             }).catch(log)
+
+        db.connect()
+            .then(function (doc) {
+                expect(doc).to.be.ok;
+            }).catch(log)
     });
 
     it('connect cb', function (done) {
@@ -56,9 +61,30 @@ describe('db', function () {
         });
     });
 
-    it('dao', function (done) {
-        db.connect().then(function () {
+    it('dao createConnection', function (done) {
+        db.createConnection().then(function (db) {
             var dao = jm.dao({
+                db: db,
+                modelName: 'product',
+                schema: schema,
+                tableName: 'p',
+                prefix: 'test_'
+            });
+            dao.create(
+                {
+                    title: '测试文章标题',
+                    content: '测试文章内容'
+                }).then(function (doc) {
+                expect(doc).to.be.ok;
+                done();
+            });
+        });
+    });
+
+    it('dao', function (done) {
+        db.connect().then(function (db) {
+            var dao = jm.dao({
+                db: db,
                 modelName: 'product',
                 schema: schema,
                 tableName: 'p',
